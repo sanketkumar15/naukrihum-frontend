@@ -1,0 +1,70 @@
+<div class="container" >
+    <h3>Create New Job Post</h3>
+    <div class="form-outline mb-4">
+        <input type="text" id="form3Example1q" [(ngModel)]="jobObj.JobName" name="JobName" class="form-control" />
+        <label class="form-label" for="form3Example1q">JobTitle</label>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+
+            <div class="form-outline datepicker">
+                <input type="text" class="form-control" [(ngModel)]="jobObj.CategoryId" name="CategoryId" />
+                <label for="exampleDatepicker1" class="form-label">Email</label>
+            </div>
+
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="form-outline datepicker">
+                <input type="text" class="form-control" [(ngModel)]="jobObj.Experience" name="Experience" />
+                <label for="exampleDatepicker1" class="form-label">Phone</label>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6 mb-4">
+            <div class="form-outline datepicker">
+                <input type="text" class="form-control" [(ngModel)]="jobObj.Package" name="Package" />
+                <label for="exampleDatepicker1" class="form-label">CompanyAddress</label>
+            </div>
+        
+
+    </div>
+
+
+        <div class="col-md-6">
+
+            <div class="form-outline">
+                <input type="text" [(ngModel)]="jobObj.Location" name="Location" class="form-control" />
+                <label class="form-label" for="form3Example1w">City</label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+        <div class="col-md-6">
+
+            <div class="form-outline">
+                <input type="text" [(ngModel)]="jobObj.JobDescription" name="JobDescription" class="form-control" />
+                <label class="form-label" for="form3Example1w">State</label>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+       
+
+    <div class="row">
+        <div class="col-12 text-center">
+
+
+    <button (click)="CreateJob()" class="btn btn-success btn-lg mb-1">Create Job </button>
+    </div>
+    </div>
+</div>
